@@ -28,11 +28,12 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        # if: ${{ github.ref == 'refs/heads/main' }}
         with:
           #  Note that the GITHUB_TOKEN is NOT a personal access token. A GitHub Actions runner automatically creates a
           #  GITHUB_TOKEN secret to authenticate in your workflow. So, you can start to deploy immediately without any
           #  configuration.
           # 不用管这个 secret，github action 会自动创建
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # publish_dir: ./public
+          BRANCH: gh-pages
