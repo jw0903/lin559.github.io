@@ -6,13 +6,13 @@ theme = "terminal"
 [params]
   contentTypeName = "posts"
   themeColor = "orange"
-  showMenuItems = 2
+  showMenuItems = 5
   fullWidthTheme = false
   centerTheme = true
 
 [languages]
   [languages.en]
-    title = "Terminal"
+    title = "Mumble-memo"
     subtitle = "A simple, retro theme for Hugo"
     keywords = ""
     copyright = ""
@@ -34,3 +34,9 @@ theme = "terminal"
         identifier = "about"
         name = "About"
         url = "/about"
+        weight = -2
+      [[languages.en.menu.main]]
+        identifier = "tag"
+        name = "Tags"
+        url = "/tags"
+        weight = -1
